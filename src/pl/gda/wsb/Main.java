@@ -1,5 +1,8 @@
 package pl.gda.wsb;
 
+import pl.gda.wsb.Device.Car;
+import pl.gda.wsb.Device.Phone;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -17,7 +20,7 @@ public class Main {
         Dog dog1 = new Dog("Huskey", "Ciapek", "40kg");
         Dog dog2 = new Dog("Labrador", "Lira", "60kg");
 
-        Car car1 = new Car("Mercedes-Benz AMG", "Mark-Benz", "Ropa(Diesel)");
+        Car car1 = new Car("Mercedes-Benz AMG", "Mark-Benz", "Ropa(Diesel)", 1500.0);
         Car car2 = new Car("Maybach", "Menel", "Benzyna");
 
         Phone phone1 = new Phone("Samsung", "J3",5.0);

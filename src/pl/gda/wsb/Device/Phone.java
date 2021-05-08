@@ -1,4 +1,6 @@
-package pl.gda.wsb;
+package pl.gda.wsb.Device;
+
+import pl.gda.wsb.Producent;
 
 public class Phone {
     String producent;
@@ -9,6 +11,10 @@ public class Phone {
         this.producent = producent;
         this.model = model;
         this.rozdzielczosc = rozdzielczosc;
+    }
+    @Override
+    public  void turnOn(){
+        System
     }
     @Override
     public String toString(){

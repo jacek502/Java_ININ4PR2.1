@@ -1,16 +1,21 @@
-package pl.gda.wsb;
+package pl.gda.wsb.Device;
 
 public class Car {
     String model;
     String producer;
     String paliwo;
-    Human car;
+    private Double value;
 
-    public Car(String model, String producer, String paliwo){
+    public Car(String model, String producer, String paliwo, Double value){
         this.model = model;
         this.producer = producer;
         this.paliwo = paliwo;
     }
+
+    public Double getValue(Double value) {
+        this.value = value;
+    }
+
     @Override
     public String toString(){
         return "Car: " +

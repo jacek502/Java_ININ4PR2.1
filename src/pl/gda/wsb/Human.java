@@ -1,12 +1,16 @@
 package pl.gda.wsb;
 
+import pl.gda.wsb.Device.Car;
+
+import java.util.Date;
 import java.util.Objects;
 
 public class Human {
     String firstName;
     String lastName;
     String position;
-    Car car;
+    private Double salary;
+    private Car car;
     Animal pet;
 
 
@@ -16,6 +20,31 @@ public class Human {
         this.position = position;
 
     }
+    public Double getSalary(){
+        System.out.println(new Date() + "jsajdaklsdhanl" + this.lastName);
+        return salary;
+    }
+
+    public void setSalary(Double newSalary){
+        if(newSalary < 0){
+            System.out.println("huehuehue nikt nie będzie dawał ze swoich");
+        }
+    }
+
+    public void getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        if(this.salary > car.getValue()) {
+            System.out.println(("Kupiłeś auto za gelt" + car.toString()));
+            this.car = car;
+        }else if(this.salary > 0.83* car.getValue()){
+            System.out.println("Kupiłeś za gotówke" + car.toString());
+            this.car = car;
+        }else System.out.println("sorry musisz zarobić więcej");
+    }
+
     @Override
     public boolean equals(Object o){
         if (this == o)return true;
